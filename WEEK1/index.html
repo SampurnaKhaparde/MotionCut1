@@ -9,16 +9,24 @@
 <body>
     <div class="container">
         <div class="todo-app">
-            <h2>TO-DO LIST <img  src="image2.avif"></h2>
+            <h2>TO-DO LIST <img src="image2.avif"></h2>
             <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <input type="date" id="due-date">
+                <select id="category">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Other">Other</option>
+                </select>
                 <button onclick="AddTask()">Add</button>
             </div>
-            <ul id="list-container">
-               
-            </ul>
+            <ul id="list-container"></ul>
+            <div class="rewards">
+                <h3>🎖 Your Rewards: <span id="badge">No Badges Yet</span></h3>
+            </div>
         </div>
     </div>
- <script src="script.js"></script>   
+    <script src="script.js"></script>
 </body>
 </html>
